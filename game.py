@@ -53,10 +53,10 @@ while run:
 		run = False
 
 	# Render scene
-	background.fill((0,0,0))
+	background.fill((0, 0, 0))
 	scene.render(background)
 
-	screen.blit(background,(0,0))
+	screen.blit(background, (0, 0))
 	pygame.display.flip()
 	fps_clock.tick(FPS)
 pygame.quit()
