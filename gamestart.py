@@ -3,9 +3,8 @@ from pygame.locals import *
 
 class GameStart(object):
 	def __init__(self, SCR_WIDTH, SCR_HEIGHT):
-		self.up, self.down, self.enter = False, False, False
 		self.options = ['START', 'HIGH SCORES', 'QUIT']
-		self.up, self.down, self.start, self.quit = False, False, False, False
+		self.up, self.down, self.enter, self.start, self.quit = False, False, False, False, False
 		resource_path = cfg.resource_path
 		self.titleFont = pygame.font.Font(os.path.join(resource_path, 'joystix monospace.ttf'), 42)
 		self.optionFont = pygame.font.Font(os.path.join(resource_path, 'joystix monospace.ttf'), 24)
